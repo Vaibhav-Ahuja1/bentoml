@@ -3,8 +3,7 @@ kind: Service
 metadata:
     labels:
         app: xgb-classifier
-        name: jenkins
-        namespace: devops-tools
+        name: xgb-classifier
 spec:
     ports:
     - name: predict
@@ -21,8 +20,7 @@ kind: Deployment
 metadata:
     labels:
         app: xgb-classifier
-        name: jenkins
-  namespace: devops-tools
+        name: xgb-classifier
 spec:
     selector:
         matchLabels:
