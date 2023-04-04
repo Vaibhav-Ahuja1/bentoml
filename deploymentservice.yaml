@@ -32,7 +32,7 @@ spec:
                 app: xgb-classifier
         spec:
             containers:
-            - image: devbarahen61/xgb_classifier:latest
+            - image: vaibhavahuja1/xgb_classifier:latest
               imagePullPolicy: IfNotPresent
               name: xgb-classifier
               ports:
