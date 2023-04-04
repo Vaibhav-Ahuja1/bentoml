@@ -22,8 +22,8 @@ node {
          }
 
          stage("Kubernetes deployment"){
-             withCredentials([string(credentialsId: 'kuberneteskey', variable: 'passwordkube')]) {
-             sh 'kubectl apply -f deploymentservice.yaml'
+                  kubernetesDeploy (configs: 'deploymentservice.yaml' , kubeconfigId: 'kuberneteskey')
+                  sh 'kubectl apply -f deploymentservice.yaml'
            }
          }
         }
