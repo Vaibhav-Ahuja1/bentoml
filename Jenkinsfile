@@ -22,7 +22,7 @@ node {
          }
 
          stage("Kubernetes deployment"){
-             sh 'kubectl apply -f deploymentservice.yaml --context jenkins'
+             sh 'kubectl apply -f deploymentservice.yaml --context default'
            }
 
         }
