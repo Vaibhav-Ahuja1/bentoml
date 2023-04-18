@@ -10,7 +10,7 @@ cd bentoml_ccfd
 pip install -r requirements.txt
 ```
 ```bash
-python3 train.py 
+python3 train.py1 
 ```
 ```bash
 bentoml serve service.py:svc --reload
