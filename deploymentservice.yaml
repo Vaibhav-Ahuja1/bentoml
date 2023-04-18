@@ -12,7 +12,7 @@ spec:
       app: xgb-classifier
     type: LoadBalancer
     externalIPs:
-    - 54.234.65.219
+    - 18.208.247.190
 ---
 apiVersion: apps/v1
 kind: Deployment
